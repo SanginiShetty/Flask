@@ -37,3 +37,19 @@
 # if __name__ == "__main__":
 #     app.run(debug=True)
 # # Fetching an External API in Flask
+
+# from flask import Flask, render_template
+# import requests
+
+# app = Flask(__name__)
+
+# @app.route("/")
+# def home():
+#     response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
+#     data = response.json()
+#     return render_template("api.html", todo=data)
+
+# if __name__ == "__main__":
+#     app.run(debug=True)
+# # Showing API Data in HTML
+
